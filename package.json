@@ -1,0 +1,26 @@
+{
+  "name": "@ms-chat/monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r run  dev",
+    "prepare": "husky",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm -r run build && changeset publish",
+    "build": "cd ./packages/vue && npm run build"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "typescript": "^5.9.2",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.2.1",
+    "vite-plugin-require-transform": "^1.0.0",
+    "vite-svg-loader": "^5.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "vue@2": "2.6.14",
+      "vue@3": "3.5.3"
+    }
+  }
+}

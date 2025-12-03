@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 滚动条凹槽的颜色，还可以设置边框属性 */
+*::-webkit-scrollbar-track-piece {
+  border-radius: 2em;
+  background-color: #f8f8f8;
+}
+
+/* 滚动条的宽度 */
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* 滚动条的设置 */
+*::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background-color: #c7c5c5;
+  background-clip: padding-box;
+}
+
+/* 滚动条鼠标移上去 */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #afadad;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

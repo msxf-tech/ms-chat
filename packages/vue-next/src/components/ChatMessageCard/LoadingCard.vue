@@ -1,0 +1,52 @@
+<template>
+  <!-- 用 v-if 控制显隐即可 -->
+  <div class="three-dot">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { IMarkdownMessageProps } from '@ms-chat/core';
+defineProps<IMarkdownMessageProps>();
+</script>
+
+<style scoped>
+.three-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.three-dot span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1976d2; /* 主色，可改 */
+  animation: pulse 1.2s infinite ease-in-out both;
+}
+
+.three-dot span:nth-child(1) {
+  animation-delay: 0s;
+}
+.three-dot span:nth-child(2) {
+  animation-delay: 0.16s;
+}
+.three-dot span:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+@keyframes pulse {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+</style>

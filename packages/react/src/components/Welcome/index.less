@@ -1,0 +1,60 @@
+@prefix: '--mschat--welcome--';
+
+.welcome {
+  border-radius: var(~'@{prefix}w-b-radius', 0.5em);
+  background: var(
+    ~'@{prefix}w-background',
+    linear-gradient(122.16deg, #f1e7fc 0%, #cfe3ff 100%)
+  );
+  padding: var(~'@{prefix}w-padding', 1.25em);
+  font-family: PingFang SC;
+  margin: var(~'@{prefix}w-margin', 1em);
+  width: var(~'@{prefix}w-width', calc(100% - 2em));
+  box-sizing: border-box;
+
+  .welcome-title {
+    color: var(~'@{prefix}w-t-color', #111111);
+    font-weight: var(~'@{prefix}w-t-font-weight', bold);
+    font-size: var(~'@{prefix}w-t-font-size', 18px);
+    line-height: var(~'@{prefix}w-t-line-height', 26px);
+    letter-spacing: 0;
+    margin-bottom: var(~'@{prefix}w-t-margin-bottom', 8px);
+  }
+
+  .welcome-describe {
+    color: var(~'@{prefix}w-d-color', #333);
+    font-weight: var(~'@{prefix}w-d-font-weight', 600);
+    font-size: var(~'@{prefix}w-d-font-size', 14px);
+    line-height: var(~'@{prefix}w-d-line-height', normal);
+    letter-spacing: 0px;
+    margin-bottom: var(~'@{prefix}w-d-margin-bottom', 14px);
+  }
+
+  .welcome-prompt {
+    .welcome-prompt-title {
+      color: var(~'@{prefix}w-p-t-color', #666);
+      font-weight: var(~'@{prefix}w-p-t-font-weight', regular);
+      font-size: var(~'@{prefix}w-p-t-font-size', 12px);
+      line-height: var(~'@{prefix}w-p-t-line-height', 18px);
+      letter-spacing: 0px;
+      margin-bottom: var(~'@{prefix}w-p-t-margin-bottom', 8px);
+    }
+
+    .welcome-prompt-item {
+      cursor: pointer;
+      border-radius: var(~'@{prefix}w-p-i-border-radius', 4px);
+      background: var(~'@{prefix}w-p-i-background', #fff);
+      color: var(~'@{prefix}w-p-i-color', #333);
+      font-weight: var(~'@{prefix}w-p-i-font-weight', regular);
+      font-size: var(~'@{prefix}w-p-i-font-size', 14px);
+      line-height: var(~'@{prefix}w-p-i-line-height', 20px);
+      letter-spacing: 0px;
+      padding: var(~'@{prefix}w-p-i-padding', 10px 12px);
+      transition: background-color 0.2s ease;
+    }
+
+    .welcome-prompt-item:hover {
+      background: var(~'@{prefix}w-p-i-hover-background', #f6f7f8);
+    }
+  }
+}

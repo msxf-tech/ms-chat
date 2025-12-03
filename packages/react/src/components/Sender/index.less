@@ -1,0 +1,125 @@
+@prefix: '--mschat--input--';
+
+.sender {
+  padding: 1em;
+}
+
+.sender-textarea-wrap {
+  position: relative;
+  box-sizing: border-box;
+  padding: var(~'@{prefix}s-i-w-padding', 0.6em);
+  box-shadow: var(
+    ~'@{prefix}s-i-w-box-shadow',
+    0px 5px 10px 1px rgba(184, 209, 243, 0.1)
+  );
+  background: var(~'@{prefix}s-i-w-bg', rgb(255, 255, 255));
+  border: var(~'@{prefix}s-i-w-border-width', 1px) solid
+    var(~'@{prefix}s-i-w-border-color', rgba(44, 128, 248, 1));
+  border-radius: var(~'@{prefix}s-i-w-border-radius', 0.5em);
+
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover,
+  &:focus-within {
+    border-color: rgba(44, 128, 248, 0.8);
+    box-shadow: 0 0 0 3px rgba(44, 128, 248, 0.2);
+  }
+
+  .sender-textarea {
+    padding: var(~'@{prefix}s-i-padding', 0.5em 4em 0.5em 1.5em) !important;
+    background: transparent !important;
+  }
+
+  .sender-pop {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.2em;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    cursor: pointer;
+
+    .sender-pop-trigger {
+      background-image: url(../../assets/send-default.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 2em 2em;
+      width: 2em;
+      height: 2em;
+    }
+
+    .sender-pop-trigger2 {
+      background-image: url(../../assets/send-can.svg);
+    }
+
+    .sendBtnPending-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2em;
+      height: 2em;
+      position: relative;
+    }
+
+    .sendBtnPending-bg {
+      position: absolute;
+      animation: resize 2s infinite;
+      border-radius: 50%;
+      background: var(
+        ~'@{prefix}s-b-pending-background-bg',
+        rgba(0, 110, 255, 0.2)
+      );
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: var(~'@{prefix}s-b-pending-background-width', 2em);
+      height: var(~'@{prefix}s-b-pending-background-height', 2em);
+    }
+
+    .sendBtnPending {
+      background: var(
+        ~'@{prefix}s-b-pending-bg',
+        linear-gradient(90deg, rgb(133, 104, 254), rgb(44, 128, 248) 100%)
+      );
+      border-radius: 50%;
+      position: relative;
+      width: var(~'@{prefix}s-b-pending-width', 2em);
+      height: var(~'@{prefix}s-b-pending-height', 2em);
+    }
+
+    @keyframes resize {
+      0% {
+        width: 2em;
+        height: 2em;
+      }
+
+      50% {
+        width: 2.8em;
+        height: 2.8em;
+      }
+
+      100% {
+        width: 2em;
+        height: 2em;
+      }
+    }
+
+    .sendBtnPending::before {
+      content: '';
+      /* 伪类需要内容来生成盒子 */
+      position: absolute;
+      /* 绝对定位来居中 */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* 通过transform来居中 */
+      border-radius: 2px;
+      background: rgb(255, 255, 255);
+      width: var(~'@{prefix}s-b-pending-inner-width', 0.6em);
+      height: var(~'@{prefix}s-b-pending-inner-height', 0.6em);
+      z-index: 1;
+    }
+  }
+}

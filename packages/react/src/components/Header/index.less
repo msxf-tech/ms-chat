@@ -1,0 +1,13 @@
+@prefix: '--mschat--header--';
+
+.header {
+  width: var(~'@{prefix}width', 100%);
+  height: var(~'@{prefix}height', 80px);
+  background: var(~'@{prefix}bg', #fff);
+  border-bottom: var(~'@{prefix}border-bottom', none);
+  font-size: var(~'@{prefix}font-size', 1.5em);
+  color: var(~'@{prefix}color', #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

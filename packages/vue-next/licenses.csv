@@ -1,0 +1,19 @@
+department,related to,name,license period,material / not material,license type,link,remote version,installed version,defined version,author
+kessler,stuff,@ms-chat/core,perpetual,material,n/a,n/a,no versions in registry for package @ms-chat/core,0.0.2-beta.4,workspace:*,n/a
+kessler,stuff,@vicons/antd,perpetual,material,MIT,https://registry.npmjs.org/@vicons/antd/-/antd-0.13.0.tgz,0.13.0,0.13.0,^0.13.0,07akioni
+kessler,stuff,@vicons/ionicons5,perpetual,material,MIT,https://registry.npmjs.org/@vicons/ionicons5/-/ionicons5-0.13.0.tgz,0.13.0,0.13.0,^0.13.0,07akioni
+kessler,stuff,less,perpetual,material,Apache-2.0,git+https://github.com/less/less.js.git,4.4.1,4.3.0,^4.2.0,Alexis Sellier self@cloudhead.net
+kessler,stuff,markdown-it,perpetual,material,MIT,git+https://github.com/markdown-it/markdown-it.git,14.1.0,14.1.0,14.1.0,n/a
+kessler,stuff,markdown-it-highlightjs,perpetual,material,Unlicense,git+https://github.com/valeriangalliat/markdown-it-highlightjs.git,4.1.0,4.1.0,4.1.0,Val (https://val.codejam.info)
+kessler,stuff,naive-ui,perpetual,material,MIT,git+https://github.com/tusen-ai/naive-ui.git,2.42.0,2.42.0,2.42.0,07akioni
+kessler,stuff,vue-class-component,perpetual,material,MIT,git+https://github.com/vuejs/vue-class-component.git,7.2.6,7.2.6,^7.2.6,Evan You
+kessler,stuff,vue3-draggable-resizable,perpetual,material,MIT,git+https://github.com/a7650/vue3-draggable-resizable.git,1.6.5,1.6.5,^1.6.5,n/a
+kessler,stuff,@vitejs/plugin-vue,perpetual,material,MIT,git+https://github.com/vitejs/vite-plugin-vue.git,4.6.2,4.6.2,^4.6.2,Evan You
+kessler,stuff,@vitejs/plugin-vue-jsx,perpetual,material,MIT,git+https://github.com/vitejs/vite-plugin-vue.git,3.1.0,3.1.0,^3.1.0,Evan You
+kessler,stuff,@vue/composition-api,perpetual,material,MIT,git+https://github.com/vuejs/composition-api.git,1.7.2,1.7.2,^1.0.0-rc.1,liximomo liximomo@gmail.com
+kessler,stuff,@vue/tsconfig,perpetual,material,MIT,git+https://github.com/vuejs/tsconfig.git,0.7.0,0.7.0,^0.7.0,Haoqun Jiang <npm@haoqun.me>
+kessler,stuff,@vueuse/core,perpetual,material,MIT,git+https://github.com/vueuse/vueuse.git,10.11.1,10.11.1,10.11.1,Anthony Fu <https://github.com/antfu>
+kessler,stuff,urijs,perpetual,material,MIT,git+https://github.com/medialize/URI.js.git,1.19.11,1.19.11,1.19.11,Rodney Rehm http://rodneyrehm.de
+kessler,stuff,vitepress,perpetual,material,MIT,git+https://github.com/vuejs/vitepress.git,1.6.4,1.6.3,^1.5.0,Evan You
+kessler,stuff,vue,perpetual,material,MIT,git+https://github.com/vuejs/core.git,3.5.21,3.5.3,^3.4.31,Evan You
+kessler,stuff,vue-tsc,perpetual,material,MIT,https://github.com/vuejs/language-tools.git,2.2.12,2.2.12,^2.2.12,n/a
