@@ -1,0 +1,39 @@
+{
+  "name": "@ms-chat/core",
+  "version": "0.0.2-beta.4",
+  "publishConfig": {
+    "module": "dist/ms-chat-core.es.ts",
+    "main": "dist/ms-chat-core.js",
+    "types": "dist/ms-chat-core.d.ts"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/ms-chat-core.es.js",
+      "require": "./dist/ms-chat-core.cjs.js"
+    },
+    "./src": "./src/index.ts",
+    "./src/utils": "./src/utils",
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite build -w",
+    "build": "vite build"
+  },
+  "overrides": {},
+  "peerDependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
+    "d3-array": "3.2.4",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/d3-array": "^3.2.1"
+  }
+}

@@ -1,0 +1,20 @@
+@prefix: '--mschat--conversation--s-';
+.layout {
+  display: flex;
+  height: 100%;
+  .sidebar {
+    width: var(~'@{prefix}width', 440px);
+    padding: var(~'@{prefix}padding', 8px 20px);
+    background-color: var(~'@{prefix}background-color', '#f3f5f6');
+    overflow-y: auto;
+    .icon-new {
+      width: var(~'@{prefix}n-width', 200px);
+      height: var(~'@{prefix}n-height', 40px);
+      padding: var(~'@{prefix}n-padding', 6px 10px);
+      margin: var(~'@{prefix}n-margin', 20px auto);
+      border-radius: var(~'@{prefix}n-border-radius', 6px);
+      --n-text-color-hover: rgba(44, 128, 248, 1) !important;
+      --n-border-hover: 1px solid rgba(44, 128, 248, 1) !important;
+    }
+  }
+}

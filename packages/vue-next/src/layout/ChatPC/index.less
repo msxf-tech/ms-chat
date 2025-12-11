@@ -1,0 +1,17 @@
+@prefix: '--ms-chat-';
+
+.chat-layout {
+  display: flex;
+  height: 100%;
+  .chat-side {
+    flex-shrink: 0;
+    width: 240px;
+  }
+  .chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(~'@{prefix}c-background-color', #fff);
+  }
+}

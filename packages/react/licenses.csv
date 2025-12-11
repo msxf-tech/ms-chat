@@ -1,0 +1,15 @@
+department,related to,name,license period,material / not material,license type,link,remote version,installed version,defined version,author
+kessler,stuff,@ant-design/icons,perpetual,material,MIT,git+https://github.com/ant-design/ant-design-icons.git#master,6.0.2,6.0.0,^6.0.0,n/a
+kessler,stuff,@uiw/react-markdown-preview,perpetual,material,MIT,git+https://github.com/uiwjs/react-markdown-preview.git,5.1.5,5.1.5,^5.1.5,kenny wang <wowohoo@qq.com>
+kessler,stuff,antd,perpetual,material,MIT,git+https://github.com/ant-design/ant-design.git,5.27.3,5.22.1,^5.22.1,n/a
+kessler,stuff,@ms-chat/core,perpetual,material,n/a,n/a,no versions in registry for package @ms-chat/core,0.0.2-beta.4,workspace:*,n/a
+kessler,stuff,@rollup/plugin-node-resolve,perpetual,material,MIT,git+https://github.com/rollup/plugins.git,16.0.1,16.0.1,^16.0.1,Rich Harris <richard.a.harris@gmail.com>
+kessler,stuff,@types/react,perpetual,material,MIT,https://github.com/DefinitelyTyped/DefinitelyTyped.git,16.14.66,16.14.66,^16.14.0,n/a
+kessler,stuff,@types/react-dom,perpetual,material,MIT,https://github.com/DefinitelyTyped/DefinitelyTyped.git,16.9.25,16.9.25,^16.9.0,n/a
+kessler,stuff,@vitejs/plugin-react,perpetual,material,n/a,git+https://github.com/vitejs/vite-plugin-react.git,4.7.0,n/a,^4.3.0,n/a
+kessler,stuff,eslint-plugin-react,perpetual,material,MIT,git+https://github.com/jsx-eslint/eslint-plugin-react.git,7.37.5,7.37.5,^7.37.5,Yannick Croissant <yannick.croissant+npm@gmail.com>
+kessler,stuff,react,perpetual,material,MIT,git+https://github.com/facebook/react.git,16.14.0,16.14.0,^16.8.0,n/a
+kessler,stuff,react-dom,perpetual,material,MIT,git+https://github.com/facebook/react.git,16.14.0,16.14.0,^16.8.0,n/a
+kessler,stuff,react,perpetual,material,MIT,git+https://github.com/facebook/react.git,19.1.1,16.14.0,>=16.8.0,n/a
+kessler,stuff,react-dom,perpetual,material,MIT,git+https://github.com/facebook/react.git,19.1.1,16.14.0,>=16.8.0,n/a
+kessler,stuff,react-rnd,perpetual,material,MIT,git+https://github.com/bokuweb/react-rnd.git,10.5.2,10.5.2,^10.5.2,bokuweb

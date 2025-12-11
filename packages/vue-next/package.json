@@ -1,0 +1,42 @@
+{
+  "name": "@ms-chat/vue",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build-prod": "vue-tsc -b && vite build",
+    "build": "rm -rf dist && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^3.4.31"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@ms-chat/core": "workspace:*",
+    "@vicons/antd": "^0.13.0",
+    "@vicons/ionicons5": "^0.13.0",
+    "less": "^4.2.0",
+    "markdown-it": "14.1.0",
+    "markdown-it-highlightjs": "4.1.0",
+    "naive-ui": "2.42.0",
+    "vue-class-component": "^7.2.6",
+    "vue3-draggable-resizable": "^1.6.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.6.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "@vue/tsconfig": "^0.7.0",
+    "@vueuse/core": "10.11.1",
+    "urijs": "1.19.11",
+    "vitepress": "^1.5.0",
+    "vue": "^3.4.31",
+    "vue-tsc": "^2.2.12"
+  }
+}

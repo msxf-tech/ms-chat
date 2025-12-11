@@ -1,0 +1,44 @@
+import {
+  CHATCONFIG_ACTION_TYPE,
+  QUERY_ACTION_TYPE,
+  CONVERSATION_ACTION_TYPE,
+  CURRENT_CONVERSATION_ACTION_TYPE,
+  MESSAGE_ACTION_TYPE,
+} from '@ms-chat/core';
+
+// config
+export const configEventTypes = [
+  CHATCONFIG_ACTION_TYPE.INIT,
+  CHATCONFIG_ACTION_TYPE.UPDATE,
+  CHATCONFIG_ACTION_TYPE.DELETE,
+] as const;
+
+// 输入框
+export const queryEventTypes = [
+  QUERY_ACTION_TYPE.INIT,
+  QUERY_ACTION_TYPE.SET,
+] as const;
+
+// 左侧会话列表
+export const conversationEventTypes = [
+  CONVERSATION_ACTION_TYPE.INIT,
+  CONVERSATION_ACTION_TYPE.ADD,
+  CONVERSATION_ACTION_TYPE.DELETE,
+  CONVERSATION_ACTION_TYPE.UPDATE,
+] as const;
+
+// 当前会话
+export const currentConversationEventTypes = [
+  CURRENT_CONVERSATION_ACTION_TYPE.SET,
+] as const;
+
+// 消息列表
+export const messageListEventTypes = [
+  MESSAGE_ACTION_TYPE.INIT,
+  MESSAGE_ACTION_TYPE.ADD,
+  MESSAGE_ACTION_TYPE.ADDS,
+  MESSAGE_ACTION_TYPE.DELETE,
+  MESSAGE_ACTION_TYPE.DELETE_IDX,
+  MESSAGE_ACTION_TYPE.DELETES,
+  MESSAGE_ACTION_TYPE.UPDATE,
+] as const;

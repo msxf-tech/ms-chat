@@ -1,0 +1,56 @@
+.chat-toggle {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  z-index: 999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  background-color: rgb(33, 117, 255);
+  background-size: cover;
+  background-position: center center;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.1);
+}
+
+.drag-panel {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 998;
+}
+
+.drag-body {
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666;
+  cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s, transform 0.2s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
